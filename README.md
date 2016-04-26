@@ -5,6 +5,7 @@ Repro
 ----
 1. Open index.html
 2. On a Surface Pro 3 or 4, in Chrome or Firefox, try inking from left to right quickly
+3. For a video of this behavior, see the video attached (PENDING NAME)
 
 Expected
 ----
