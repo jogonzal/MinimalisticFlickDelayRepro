@@ -1,10 +1,10 @@
 # MinimalisticFlickDelayRepro
-Minimalistic repro for "mousedown delay" in <canvas> issue in Microsoft Surface (Repro's in Chrome/Firefox)
+Minimalistic repro for "mousedown delay" in <canvas> issue in Chrome/Firefox when using the Microsoft Surface Stylus
 
 Repro
 ----
 1. Open index.html
-2. On a Surface Pro 3 or 4, in Chrome or Firefox, try inking from left to right quickly
+2. On a Surface Pro 3 or 4, in Chrome or Firefox, try inking from left to right quickly with the stylus
 3. For a video of this behavior, see the video attached (PENDING NAME)
 
 Expected
