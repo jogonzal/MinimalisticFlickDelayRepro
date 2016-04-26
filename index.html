@@ -9,10 +9,13 @@
 		<canvas style="border:solid; border-width:1px" id="mycanvas" width="1000" height="600"></canvas>
 		<br>
 		<p>Ink on the canvas above (with a stylus)</p>
+		<p id="appCodeName"></p>
 		<p id="browserUserAgent"></p>
 		<script>
 			var userAgentParagraph = document.getElementById("browserUserAgent");
+			var appCodeNameParagraph = document.getElementById("appCodeName");
 			userAgentParagraph.innerHTML = "User agent: " + navigator.userAgent;
+			appCodeNameParagraph.innerHTML = "AppName: " + navigator.appCodeName;
 		
 			var canvas = document.getElementById("mycanvas");
 			var context = canvas.getContext("2d");
