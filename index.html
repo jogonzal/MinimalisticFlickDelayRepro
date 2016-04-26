@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Repro for stylus inking issue</title>
+<meta charset="utf-8"/>
+</head>
+<body>
+	<div>
+		<canvas id="mycanvas" width="400" height="400"></canvas>
+		<br>
+		<p>Ink on the canvas above (with a stylus)</p>
+		<script>
+			var canvas = document.getElementById("mycanvas");
+			var context = canvas.getContext("2d");
+			var mouseIsDown = false;
+			
+			var mousedown = function(e){
+				mouseIsDown = true;
+				context.fillStyle = "rgba(0, 0, 255, 0.5)";
+				context.fillRect(event.clientX, event.clientY, 10, 10);
+			}
+			var mousemove = function(e){
+				if (mouseIsDown){
+					context.fillStyle = "rgba(0, 255, 0, 0.5)";
+					context.fillRect(event.clientX, event.clientY, 10, 10);
+				}
+			}
+			var mouseup = function(e){
+				mouseIsDown = false;
+				context.fillStyle = "rgba(255, 0, 0, 0.5)";
+				context.fillRect(event.clientX, event.clientY, 10, 10);
+			}
+			canvas.addEventListener("mousedown", mousedown);
+			canvas.addEventListener("mouseup", mouseup);
+			canvas.addEventListener("mousemove", mousemove);
+		</script>
+	</div>
+<br/>
+<br/>
+</body>
+</html>
