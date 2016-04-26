@@ -6,7 +6,7 @@
 </head>
 <body>
 	<div>
-		<canvas id="mycanvas" width="400" height="400"></canvas>
+		<canvas style="border:solid; border-width:1px" id="mycanvas" width="1000" height="600"></canvas>
 		<br>
 		<p>Ink on the canvas above (with a stylus)</p>
 		<script>
@@ -17,7 +17,7 @@
 			var mousedown = function(e){
 				mouseIsDown = true;
 				context.fillStyle = "rgba(0, 0, 255, 0.5)";
-				context.fillRect(event.clientX, event.clientY, 10, 10);
+				context.fillRect(event.clientX, event.clientY, 20, 20);
 			}
 			var mousemove = function(e){
 				if (mouseIsDown){
@@ -28,7 +28,7 @@
 			var mouseup = function(e){
 				mouseIsDown = false;
 				context.fillStyle = "rgba(255, 0, 0, 0.5)";
-				context.fillRect(event.clientX, event.clientY, 10, 10);
+				context.fillRect(event.clientX, event.clientY, 20, 20);
 			}
 			canvas.addEventListener("mousedown", mousedown);
 			canvas.addEventListener("mouseup", mouseup);
