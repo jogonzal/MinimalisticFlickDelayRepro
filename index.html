@@ -15,17 +15,20 @@
 			var mouseIsDown = false;
 			
 			var mousedown = function(e){
+				console.log("MouseDown called");
 				mouseIsDown = true;
 				context.fillStyle = "rgba(0, 0, 255, 0.5)";
 				context.fillRect(e.clientX, e.clientY, 20, 20);
 			}
 			var mousemove = function(e){
+				console.log("mousemove called");
 				if (mouseIsDown){
 					context.fillStyle = "rgba(0, 255, 0, 0.5)";
 					context.fillRect(e.clientX, e.clientY, 10, 10);
 				}
 			}
 			var mouseup = function(e){
+				console.log("mouseup called");
 				mouseIsDown = false;
 				context.fillStyle = "rgba(255, 0, 0, 0.5)";
 				context.fillRect(e.clientX, e.clientY, 20, 20);
