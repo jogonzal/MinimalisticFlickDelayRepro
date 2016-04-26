@@ -17,18 +17,18 @@
 			var mousedown = function(e){
 				mouseIsDown = true;
 				context.fillStyle = "rgba(0, 0, 255, 0.5)";
-				context.fillRect(event.clientX, event.clientY, 20, 20);
+				context.fillRect(e.clientX, e.clientY, 20, 20);
 			}
 			var mousemove = function(e){
 				if (mouseIsDown){
 					context.fillStyle = "rgba(0, 255, 0, 0.5)";
-					context.fillRect(event.clientX, event.clientY, 10, 10);
+					context.fillRect(e.clientX, e.clientY, 10, 10);
 				}
 			}
 			var mouseup = function(e){
 				mouseIsDown = false;
 				context.fillStyle = "rgba(255, 0, 0, 0.5)";
-				context.fillRect(event.clientX, event.clientY, 20, 20);
+				context.fillRect(e.clientX, e.clientY, 20, 20);
 			}
 			canvas.addEventListener("mousedown", mousedown);
 			canvas.addEventListener("mouseup", mouseup);
