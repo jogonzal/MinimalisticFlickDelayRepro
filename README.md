@@ -1,6 +1,11 @@
 # MinimalisticFlickDelayRepro
 Minimalistic repro for "mousedown delay" in <canvas> issue in Chrome/Firefox when using the Microsoft Surface Stylus
 
+
+Issues tracking:
+https://bugs.chromium.org/p/chromium/issues/detail?id=608116
+https://bugzilla.mozilla.org/show_bug.cgi?id=1269544#add_comment
+
 Repro
 ----
 1. Open index.html
