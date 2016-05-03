@@ -22,5 +22,5 @@ This does not repro in IE or Edge. In fact, those browsers have turned off suppo
 
 How to fix it
 ----
-This can only be fixed in Firefox/Chrome code by disabling flicks in chrome and firefox (either completely or in a canvas element). The links above and below provides documentation on how to disable this behavior.
-https://social.msdn.microsoft.com/Forums/windowsdesktop/en-US/8325ddd8-53df-49b7-ad78-525e4005464b/how-to-disableenable-pen-flicks-programatically?forum=tabletandtouch
+This can only be fixed in Firefox/Chrome code by disabling flicks in chrome and firefox (either completely or in a canvas element). The links in this SO question provide code samples on how other apps have fixed this issue.
+http://stackoverflow.com/questions/36877410/how-can-i-disable-flick-behavior-in-a-browser-chrome-firefox
